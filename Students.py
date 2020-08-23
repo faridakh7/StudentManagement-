@@ -11,7 +11,7 @@ class Telebe:
     def showData(self):
         print(f"ID: {self.id} / Name: {self.name} / Surname: {self.surname} / Email: {self.email} / Contact: {self.contact}")
 
-print("Telebe Melumat Sistemine Xosh Gelmishiniz")
+print("Telebe Melumat Sistemine Xosh Gelmishiniz !")
 
 def start():
     xususiEmr=int(input("""
