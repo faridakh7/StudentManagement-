@@ -28,23 +28,33 @@ def start():
         telebeyeVerilenAd=input("Telebenin Databasedeki Adini daxil edin:  ")
         addStudent(telebeyeVerilenAd)
         start()
+
     elif xususiEmr==2:
-        telebeninKodu=input("Telebenin Databasedeki ID-sini daxil edin:  ")
+    
+        telebeninKodu = int(
+            input("Silmək istədiyiniz tələbənin ID-sin daxil edin: "))
+
+    
         delStudentInfo(telebeninKodu)
-        print(f"{telebeninKodu} ID'li telebe databazadan silindi")
-        showFullData()
+        print(" --- Yazdığınız koda uyğun gələn tələbənin məlumatları silindi. --- ")
         start()
+
     elif xususiEmr==3:
         changestudentInfo()
+
     elif xususiEmr==4:
         telebeninAdiInfo=input("Gostermek istediyiniz adi daxil edin:  ")
         showStudentInfo(telebeninAdiInfo)
         start()
+        
     elif xususiEmr==5:
+        while allStudents==[]:
+            print("Databasede hec bir melumat yoxdur")
+            start()               
+        
         showFullData()
         start()
-    else:
-        print("Duzgun Daxil Edin!")
+        
 
 
 def addStudent(telebeninDatabaseAdi):
@@ -88,8 +98,12 @@ def showFullData():
     for allData in allStudents:
         for key, value in allData.__dict__.items():
             print(f"{key} => {value}")
+        print("__________________________________")
+
+
 
 start()
+
 
 
 
