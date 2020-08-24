@@ -11,4 +11,3 @@
 * Tələbə soyadı
 * Tələbə email adresi (daxilində @ işarəti olub olmadığı yoxlanılmalıdır)
 * Tələbə telefon nömrəsi (+994 -lə başlanılan telefon nömrəsi daxil edilməlidir)
-s
